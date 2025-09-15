@@ -6,4 +6,4 @@ try:
  print("Chu vi =",cv)
  print("Diện tích=",dt)
 except:
- print("Lỗi rồi!")
+ print("Lỗi rồi!") 
