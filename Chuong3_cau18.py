@@ -28,6 +28,29 @@ def h3(n):
             else:
                 print(" ",end=" ")
         print()
+def ve_hai_tam_giac(n):
+    # Tam giác 1: vuông lệch trái, mũi nhọn xuống
+    for i in range(1, n + 1):
+        if i == 1:
+            print("*")
+        elif i == n:
+            print("*" + " " * (2 * (n - 1)) + "*")
+        else:
+            print("*" + " " * (2 * (i - 1) - 1) + "*")
+
+    # Tam giác 2: vuông lệch phải, mũi nhọn lên
+    for i in range(n, 0, -1):
+        spaces = " " * (i - 1)
+        if i == 1:
+            print(spaces + "*")
+        elif i == n:
+            print(spaces + "*" + " " * (2 * (i - 1)) + "*")
+        else:
+            print(spaces + "*" + " " * (2 * (i - 1) - 1) + "*")
+
+# Thử với n = 5
+ve_hai_tam_giac(5)
+
 n=int(input("Nhập n:"))
 h1(n)
 h2(n)
